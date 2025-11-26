@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Lyceum of Aparri</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin:0;font-family:Poppins, sans-serif;background:#fafafa;">
+
+<!-- NAVBAR -->
+<nav class="navbar" 
+     style="display:flex;align-items:center;justify-content:space-between;padding:15px 25px;background:#800000;color:white;position:sticky;top:0;z-index:1000;">
+
+  <div class="nav-left" style="display:flex;align-items:center;gap:10px;">
+    <img src="images/images.png" class="nav-logo" style="height:45px;width:45px;border-radius:50%;object-fit:cover;">
+    <span class="brand-text" style="font-size:20px;font-weight:600;">Lyceum of Aparri</span>
+  </div>
+
+  <div class="nav-right desktop-only" style="display:flex;gap:20px;">
+    <a href="index.html" style="color:white;text-decoration:none;font-weight:500;">Home</a>
+    <a href="news.html" style="color:white;text-decoration:none;font-weight:500;">News</a>
+    <a href="courses.html" style="color:white;text-decoration:none;font-weight:500;">Courses</a>
+    <a href="gallery.html" style="color:white;text-decoration:none;font-weight:500;">Gallery</a>
+    <a href="about.html" style="color:white;text-decoration:none;font-weight:500;">About</a>
+    <a href="contact.html" class="highlight-link" style="color:#ffd27f;font-weight:600;text-decoration:underline;">Contact</a>
+  </div>
+
+  <button id="hamburger5" class="hamburger mobile-only" 
+          style="font-size:26px;background:transparent;border:none;color:white;cursor:pointer;display:none;">
+    ☰
+  </button>
+</nav>
+
+<div id="mobileMenu5" class="mobile-menu" 
+     style="display:none;flex-direction:column;background:#a00000;color:white;padding:20px;gap:15px;">
+</div>
+
+<!-- HEADER -->
+<header class="page-header" style="text-align:center;padding:60px 20px;background:#fff;">
+  <h1 style="font-size:42px;font-family:'Playfair Display', serif;margin-bottom:10px;color:#800000;">
+    Contact Us
+  </h1>
+  <p style="font-size:18px;color:#555;">Send a message or visit our campus</p>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-form-section" 
+         style="max-width:1100px;margin:40px auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:40px;justify-content:center;">
+
+  <!-- FORM -->
+  <form class="contact-form" 
+        onsubmit="alert('Demo only — connect to backend to submit'); return false;"
+        style="background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.08);flex:1;min-width:320px;max-width:450px;">
+
+    <label style="display:block;margin-bottom:15px;font-weight:600;color:#333;">
+      Name
+      <input type="text" required
+             style="width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:6px;">
+    </label>
+
+    <label style="display:block;margin-bottom:15px;font-weight:600;color:#333;">
+      Email
+      <input type="email" required
+             style="width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:6px;">
+    </label>
+
+    <label style="display:block;margin-bottom:15px;font-weight:600;color:#333;">
+      Message
+      <textarea rows="5" required
+                style="width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:6px;resize:vertical;"></textarea>
+    </label>
+
+    <button class="btn primary" type="submit"
+            style="width:100%;padding:12px;background:#800000;color:white;border:none;border-radius:6px;font-size:16px;font-weight:600;cursor:pointer;">
+      Send Message
+    </button>
+  </form>
+
+  <!-- MAP -->
+  <div class="map-large" 
+       style="flex:1;min-width:320px;max-width:600px;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+    <iframe 
+      src="https://maps.google.com/maps?q=Aparri%2C%20Cagayan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      loading="lazy"
+      style="width:100%;height:100%;min-height:400px;border:none;">
+    </iframe>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="simple-footer" 
+        style="width:100%;background:#800000;color:white;text-align:center;padding:25px 10px;margin-top:50px;font-size:15px;">
+  © 2025 Lyceum of Aparri — All Rights Reserved
+</footer>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

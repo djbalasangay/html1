@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Courses — Lyceum of Aparri</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin:0;font-family:Poppins, sans-serif;background:#fafafa;">
+
+<!-- NAVBAR -->
+<nav class="navbar" 
+     style="display:flex;align-items:center;justify-content:space-between;padding:15px 25px;background:#800000;color:white;position:sticky;top:0;z-index:1000;">
+  
+  <div class="nav-left" style="display:flex;align-items:center;gap:10px;">
+    <img src="images/images.png" class="nav-logo" 
+         style="height:45px;width:45px;border-radius:50%;object-fit:cover;">
+    <span class="brand-text" style="font-size:20px;font-weight:600;">Lyceum of Aparri</span>
+  </div>
+
+  <div class="nav-right desktop-only" style="display:flex;gap:20px;">
+    <a href="index.html" style="color:white;text-decoration:none;font-weight:500;">Home</a>
+    <a href="news.html" style="color:white;text-decoration:none;font-weight:500;">News</a>
+    <a href="courses.html" class="highlight-link" style="color:#ffd27f;text-decoration:underline;font-weight:600;">Courses</a>
+    <a href="gallery.html" style="color:white;text-decoration:none;font-weight:500;">Gallery</a>
+    <a href="about.html" style="color:white;text-decoration:none;font-weight:500;">About</a>
+    <a href="contact.html" style="color:white;text-decoration:none;font-weight:500;">Contact</a>
+  </div>
+
+  <button id="hamburger2" class="hamburger mobile-only" 
+          style="font-size:26px;background:transparent;border:none;color:white;cursor:pointer;display:none;">☰</button>
+</nav>
+
+<div id="mobileMenu2" class="mobile-menu" 
+     style="display:none;flex-direction:column;background:#a00000;color:white;padding:20px;gap:15px;">
+</div>
+
+<!-- HEADER -->
+<header class="page-header" 
+        style="text-align:center;padding:60px 20px;background:white;">
+  <h1 style="font-size:42px;font-family:'Playfair Display', serif;color:#800000;margin-bottom:10px;">
+    Courses Offered
+  </h1>
+  <p style="font-size:18px;color:#555;">College and Basic Education programs</p>
+</header>
+
+<!-- FILTER BUTTONS -->
+<section class="controls" 
+         style="display:flex;justify-content:center;gap:15px;margin:30px 0;flex-wrap:wrap;">
+
+  <button class="filter-btn active" data-filter="all"
+          style="padding:10px 20px;border:none;background:#800000;color:white;border-radius:6px;font-size:14px;cursor:pointer;">
+    All
+  </button>
+
+  <button class="filter-btn" data-filter="college"
+          style="padding:10px 20px;border:none;background:#ddd;color:#333;border-radius:6px;font-size:14px;cursor:pointer;">
+    College
+  </button>
+
+  <button class="filter-btn" data-filter="basic"
+          style="padding:10px 20px;border:none;background:#ddd;color:#333;border-radius:6px;font-size:14px;cursor:pointer;">
+    Basic Education
+  </button>
+</section>
+
+<!-- COURSE GRID -->
+<section class="courses-grid" id="coursesGrid"
+         style="max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;padding:20px;">
+
+  <!-- COLLEGE -->
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">College of Liberal Arts</h3>
+    <p>Humanities, social sciences, teacher formation.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">College of Criminal Justice</h3>
+    <p>Criminology & public safety formation.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">College of Health</h3>
+    <p>Nursing and allied health programs.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">Graduate School</h3>
+    <p>Graduate degrees & continuing education.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">College of Commerce</h3>
+    <p>BSBA and business programs.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">College of Education</h3>
+    <p>BSE, BEED — teacher formation programs.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">Information & Computing Sciences</h3>
+    <p>Computer Science, IT, applied computing.</p>
+  </article>
+
+  <article class="course-card" data-type="college"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">College of Engineering</h3>
+    <p>Engineering & technology programs.</p>
+  </article>
+
+  <!-- BASIC EDUCATION -->
+  <article class="course-card" data-type="basic"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">Elementary School</h3>
+    <p>Foundational formation grounded in Catholic values.</p>
+  </article>
+
+  <article class="course-card" data-type="basic"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">Junior High School</h3>
+    <p>Academic & faith formation for adolescents.</p>
+  </article>
+
+  <article class="course-card" data-type="basic"
+           style="background:white;padding:25px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:0.3s;">
+    <h3 style="color:#800000;margin-bottom:10px;">Senior High School</h3>
+    <p>Tracks and preparation for higher study and vocation.</p>
+  </article>
+</section>
+
+<!-- FOOTER -->
+<footer class="simple-footer" 
+        style="width:100%;background:#800000;color:white;text-align:center;padding:25px 10px;margin-top:50px;font-size:15px;">
+  © 2025 Lyceum of Aparri — All Rights Reserved
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/courses.js"></script>
+
+</body>
+</html>

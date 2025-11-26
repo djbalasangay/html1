@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lyceum of Aparri — Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="images/images.png" alt="logo" class="nav-logo">
+    <span class="brand-text">Lyceum of Aparri</span>
+  </div>
+
+  <div class="nav-right desktop-only" id="desktopNav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="news.html" class="nav-link">News</a>
+    <a href="courses.html" class="nav-link">Courses</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <button id="hamburger" class="hamburger mobile-only" aria-label="Open menu" aria-expanded="false">☰</button>
+</nav>
+
+<!-- Hamburger button -->
+<div id="hamburger" class="hamburger" aria-expanded="false" aria-label="Toggle menu">
+  &#9776; <!-- three bars -->
+</div>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="mobile-menu" aria-hidden="true" style="display:none; flex-direction: column;">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="news.html" class="nav-link">News</a>
+  <a href="courses.html" class="nav-link">Courses</a>
+  <a href="gallery.html" class="nav-link">Gallery</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</div>
+
+<!-- ANNOUNCEMENT -->
+<div class="announcement-bar">📢 Enrollment ongoing • Faith • Scholarship • Service</div>
+
+<!-- HERO (PASABOG) -->
+<header class="hero hero-maroon hero-pasabog">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content pasabog-content">
+    <img src="images/images.png" alt="Lyceum logo" class="hero-logo">
+    <h1 class="hero-title">Lyceum of Aparri</h1>
+    <p class="hero-subtitle">Faith • Scholarship • Service</p>
+
+    <div class="hero-buttons">
+      <a href="courses.html" class="btn primary">View Courses</a>
+      <a href="about.html" class="btn ghost">About Us</a>
+    </div>
+
+    <div class="hero-burst" id="heroBurst">
+      <strong>BREAKING:</strong> Lyceum High School dominates TASSAA Cluster Meet 2025 — big wins in sports & culture! 🎉
+    </div>
+
+    <!-- decorative animated icons -->
+    <div class="hero-icons" aria-hidden="true">
+      <span class="burst-dot" style="--i:0"></span>
+      <span class="burst-dot" style="--i:1"></span>
+      <span class="burst-dot" style="--i:2"></span>
+      <span class="burst-dot" style="--i:3"></span>
+    </div>
+  </div>
+</header>
+
+<!-- FEATURE BOXES (interactive) -->
+<section class="feature-row">
+  <a class="feature-card tilt" href="courses.html">
+    <h3>Programs & Degrees</h3>
+    <p>College: Liberal Arts, Criminal Justice, Health, Commerce, Education, ICS, Engineering, Graduate School</p>
+  </a>
+
+  <a class="feature-card tilt" href="courses.html#basic">
+    <h3>Basic Education</h3>
+    <p>Elementary • Junior High • Senior High — strong Catholic formation</p>
+  </a>
+
+  <a class="feature-card tilt" href="news.html">
+    <h3>News & Sports</h3>
+    <p>Live updates: TASSAA, PCNE XI, outreach, tributes</p>
+  </a>
+
+  <a class="feature-card tilt" href="gallery.html">
+    <h3>Gallery & Events</h3>
+    <p>Photos, videos, alumni, and campus life</p>
+  </a>
+</section>
+
+<!-- VMG / Philosophy -->
+<section class="vmg-rich">
+  <div class="vmg-left">
+    <h2>Vision</h2>
+    <p><strong>We produce leaders for the Church and society,</strong> rooted in the Person and message of Jesus Christ and attuned to the mind of the Church in faith and morals.</p>
+
+    <h2>Mission</h2>
+    <p>To provide an education that forms lives according to Christ — a culture of excellence, expertise, and extension nourished by encounter with Jesus and inspired by witnesses who live out His message.</p>
+  </div>
+
+  <div class="vmg-right">
+    <h2>Philosophy of Education</h2>
+    <p>Education centers on formation according to the mature measure of Jesus Christ: forming minds, hearts, and habits through Gospel values and Christian practice.</p>
+
+    <h3>Core Values</h3>
+    <ul class="values-list">
+      <li>Responsibility</li>
+      <li>Equity & Equality</li>
+      <li>Transcendence</li>
+      <li>Ingenuity</li>
+      <li>Availability (Service)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- STATISTICS & QUICK ANIM -->
+<section class="stats-section">
+  <div class="stat">
+    <div class="stat-num" data-target="1200">0</div>
+    <div class="stat-label">Students</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" data-target="50">0</div>
+    <div class="stat-label">Faculty</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" data-target="60">0</div>
+    <div class="stat-label">Years</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" data-target="10">0</div>
+    <div class="stat-label">Programs</div>
+  </div>
+</section>
+
+<!-- IMAGE SLIDER -->
+<section class="slider-section">
+  <div class="slider-wrapper" id="mainSlider">
+    <div class="slider">
+      <img src="images/Messenger_creation_0828912D-D593-4479-97CB-133589BF8573.jpeg" class="slide active" alt="">
+      <img src="images/Messenger_creation_2756E2AE-25A3-4400-93A1-875FDADF953E.jpeg" class="slide" alt="">
+      <img src="images/Messenger_creation_CEDEFDBD-9903-46F4-BBE3-422153C9F868.jpeg" class="slide" alt="">
+    </div>
+  </div>
+  <div class="slider-dots" id="mainDots"></div>
+</section>
+
+<!-- PASABOG CARDS & ACTIONS -->
+<section class="actions-row">
+  <div class="action-card">
+    <h4>Sports Highlight: TASSAA 2025</h4>
+    <p>See full report in News — champions in volleyball, badminton, table tennis, and cultural arts.</p>
+    <a href="news.html" class="btn small">Read More</a>
+  </div>
+
+  <div class="action-card">
+    <h4>Community Outreach</h4>
+    <p>Free PhilHealth Konsulta and eye surgeries were provided to our community.</p>
+    <a href="news.html" class="btn small">Read More</a>
+  </div>
+
+  <div class="action-card">
+    <h4>Research & Extension</h4>
+    <p>Research programs rooted in Christian and Filipino foundations for meaningful impact.</p>
+    <a href="about.html" class="btn small">Learn More</a>
+  </div>
+</section>
+
+<!-- LIVE NEWS WIDGET (rendered by js/news.js) -->
+<section class="live-news">
+  <div class="news-header">
+    <h2>News & Updates</h2>
+    <p class="muted">Newest first — sports, outreach, events, tributes</p>
+  </div>
+
+  <div id="newsList" class="news-list"></div>
+
+  <!-- ADMIN FORM -->
+  <details class="admin-add" id="adminAdd">
+    <summary>🛠️ Add / Update News (local demo)</summary>
+    <form id="addNewsForm" class="add-news-form">
+      <label>Title <input type="text" id="nTitle" required></label>
+      <label>Summary <textarea id="nSummary" rows="3" required></textarea></label>
+      <label>Category
+        <select id="nCategory">
+          <option>General</option>
+          <option>Sports</option>
+          <option>Outreach</option>
+          <option>Evangelization</option>
+          <option>Tribute</option>
+        </select>
+      </label>
+      <div class="admin-actions">
+        <button class="btn primary" type="submit">Publish News</button>
+        <button class="btn outline" id="clearNews" type="button">Clear All (local)</button>
+      </div>
+      <p class="muted small">Local demo: stored in your browser only. Use a real CMS for public posting.</p>
+    </form>
+  </details>
+</section>
+
+<!-- FOOTER -->
+<footer class="contact-section">
+  <img src="images/images.png" alt="" class="contact-icon">
+  <div class="contact-text">
+    <h3>Contact Us</h3>
+    <p><strong>Address:</strong> Macanaya, Aparri, Cagayan</p>
+    <p><strong>Email:</strong> info@lyceumaparri.edu.ph</p>
+    <p><strong>Phone:</strong> 09XX-XXX-XXXX</p>
+    <p class="footer-note">© 2025 Lyceum of Aparri — All rights reserved</p>
+  </div>
+  <div class="map">
+    <iframe src="https://maps.google.com/maps?q=Aparri%2C%20Cagayan&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/news.js"></script>
+<script src="js/testimonials.js"></script>
+</body>
+</html>

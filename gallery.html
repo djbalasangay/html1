@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Gallery — Lyceum of Aparri</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="margin:0;font-family:Poppins,sans-serif;background:#fafafa;">
+
+<!-- NAVBAR -->
+<nav class="navbar" style="display:flex;align-items:center;justify-content:space-between;padding:15px 25px;background:#800000;color:white;position:sticky;top:0;z-index:1000;">
+  <div class="nav-left" style="display:flex;align-items:center;gap:10px;">
+    <img src="images/images.png" class="nav-logo" style="height:45px;width:45px;border-radius:50%;object-fit:cover;">
+    <span class="brand-text" style="font-size:20px;font-weight:600;">Lyceum of Aparri</span>
+  </div>
+  <div class="nav-right desktop-only" style="display:flex;gap:20px;">
+    <a href="index.html" style="color:white;text-decoration:none;font-weight:500;">Home</a>
+    <a href="news.html" style="color:white;text-decoration:none;font-weight:500;">News</a>
+    <a href="courses.html" style="color:white;text-decoration:none;font-weight:500;">Courses</a>
+    <a href="gallery.html" class="highlight-link" style="color:#ffd27f;text-decoration:underline;font-weight:600;">Gallery</a>
+    <a href="about.html" style="color:white;text-decoration:none;font-weight:500;">About</a>
+    <a href="contact.html" style="color:white;text-decoration:none;font-weight:500;">Contact</a>
+  </div>
+  <button id="hamburger6" class="hamburger mobile-only" style="font-size:26px;background:transparent;border:none;color:white;cursor:pointer;display:none;">☰</button>
+</nav>
+
+<div id="mobileMenu6" class="mobile-menu" style="display:none;flex-direction:column;background:#a00000;color:white;padding:20px;gap:15px;"></div>
+
+<!-- HEADER -->
+<header class="page-header" style="text-align:center;padding:60px 20px;background:white;">
+  <h1 style="font-size:42px;font-family:'Playfair Display', serif;color:#800000;margin-bottom:10px;">Photo Gallery</h1>
+  <p style="font-size:18px;color:#555;">Click images to view larger</p>
+</header>
+
+<!-- GALLERY GRID -->
+<section class="gallery-full" style="padding:20px;max-width:1200px;margin:auto;">
+  <div class="gallery-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;">
+    <img data-src="images/Messenger_creation_0828912D-D593-4479-97CB-133589BF8573.jpeg" class="lazy" alt="" style="width:100%;border-radius:12px;cursor:pointer;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <img data-src="images/Messenger_creation_2756E2AE-25A3-4400-93A1-875FDADF953E.jpeg" class="lazy" alt="" style="width:100%;border-radius:12px;cursor:pointer;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <img data-src="images/Messenger_creation_CEDEFDBD-9903-46F4-BBE3-422153C9F868.jpeg" class="lazy" alt="" style="width:100%;border-radius:12px;cursor:pointer;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <img data-src="images/Messenger_creation_FF4AA3C8-5BDC-441D-A8B3-4011BBB146A2.jpeg" class="lazy" alt="" style="width:100%;border-radius:12px;cursor:pointer;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox hidden" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;z-index:2000;visibility:hidden;opacity:0;transition:opacity 0.3s;">
+  <button id="lbClose" class="lb-close" style="position:absolute;top:20px;right:30px;font-size:36px;color:white;background:none;border:none;cursor:pointer;">×</button>
+  <img id="lbImg" src="" alt="" style="max-width:90%;max-height:85%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.5);">
+</div>
+
+<!-- FOOTER -->
+<footer class="simple-footer" style="width:100%;background:#800000;color:white;text-align:center;padding:25px 10px;margin-top:50px;font-size:15px;">
+  © 2025 Lyceum of Aparri — All Rights Reserved
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+  // Lazy load images
+  document.querySelectorAll('.lazy').forEach(img => {
+    img.src = img.dataset.src;
+  });
+</script>
+
+</body>
+</html>
